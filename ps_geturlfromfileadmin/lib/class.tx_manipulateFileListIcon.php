@@ -17,7 +17,8 @@ class tx_manipulateFileListIcon implements fileList_editIconHook{
 
 	$img = '<img src="'.$parentObject->backPath.'../typo3conf/ext/ps_geturlfromfileadmin/res/url.png" height="16" width="16" title="Show url" />';
 
-	$cells['copyPath'] = '<a href="#" onclick="$(this).next().toggle(); return false;">'.$img.'</a><input type="text" value="'.$fullPath.'" size="30" style="margin-left: 3px;display: none"/>';
+	//$cells['copyPath'] = '<a href="#" onclick="$(this).next().toggle(); return false;">'.$img.'</a><input type="text" value="'.$fullPath.'" size="30" style="margin-left: 3px;display: none"/>';
+	$cells['copyPath'] = '<a href="#" onclick="window.prompt(\'Copy to clipboard: Ctrl+C, Enter\', \''.$fullPath.'\');">'.$img.'</a><input type="text" value="'.$fullPath.'" size="30" style="margin-left: 3px;display: none"/>';
 
    }
 
