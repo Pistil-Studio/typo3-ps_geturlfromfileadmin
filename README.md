@@ -6,4 +6,4 @@ Typo3 Compatibility : 4.X
 Just install the extension to add the new fonctionnality
 
 Result in the backend :
-![alt tag](https://cloud.githubusercontent.com/assets/6927671/6506602/b2dd2180-c34c-11e4-9e76-bf5d71f815da.png)
+![alt tag](https://cloud.githubusercontent.com/assets/6927671/6776675/1803456e-d142-11e4-8190-6872ed101dbc.png)
