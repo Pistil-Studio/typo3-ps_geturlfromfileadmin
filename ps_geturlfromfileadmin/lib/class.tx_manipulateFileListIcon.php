@@ -1,9 +1,9 @@
 <?php
 
 
-require_once(PATH_typo3.'interfaces/interface.filelist_editiconshook.php');
+//require_once(PATH_typo3.'interfaces/interface.filelist_editiconshook.php');
 
-class tx_manipulateFileListIcon implements fileList_editIconHook{
+class tx_manipulateFileListIcon implements \TYPO3\CMS\Filelist\FileListEditIconHookInterface{
 
    public function manipulateEditIcons(&$cells, &$parentObject){
 
