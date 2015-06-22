@@ -7,9 +7,8 @@ class tx_manipulateFileListIcon implements \TYPO3\CMS\Filelist\FileListEditIconH
 
    public function manipulateEditIcons(&$cells, &$parentObject){
 
-
    	// extract path of file 
-	$pattern = "/fileadmin\/(.*)',/";
+	$pattern = "/1\:\/(.*)'/";
 	preg_match($pattern, $cells['info'], $matches);
 
 	$domain = (( $_SERVER['HTTPS'] == 'on ') ? 'https://' : 'http://').$_SERVER['SERVER_NAME'];
